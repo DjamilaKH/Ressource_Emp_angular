@@ -1,4 +1,4 @@
-<div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-blue-400">
+<!-- <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-blue-400">
     <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-md w-full transform hover:scale-105 transition-transform duration-300">
       <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Inscription</h2>
   
@@ -42,6 +42,33 @@
           <p>{{ errorMessage }}</p>
         </div>
       </form>
+    </div>
+  </div>
+   -->
+
+   <div class="auth-container">
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" />
+        </div>
+        <div class="button-container">
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+      <div class="link-container">
+        <p>Already have an account? <a routerLink="/login">Sign In</a></p>
+      </div>
     </div>
   </div>
   

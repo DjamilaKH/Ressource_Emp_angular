@@ -1,10 +1,10 @@
-/* Style général pour SignIn */
+/* Style général pour Ressource et Emprunt */
 .auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Transition de bleu et rose doux */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Couleur de fond de transition */
     animation: gradientBackground 15s ease-in-out infinite;
   }
   
@@ -40,7 +40,8 @@
     color: #333;
   }
   
-  .input-group input {
+  .input-group input,
+  .input-group textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -49,7 +50,13 @@
     transition: border 0.3s ease-in-out;
   }
   
-  .input-group input:focus {
+  .input-group textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
     border: 1px solid #6a82fb;
     outline: none;
   }
@@ -71,21 +78,6 @@
   
   button:hover {
     background-color: #4f66e1;
-  }
-  
-  .link-container {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .link-container a {
-    color: #6a82fb;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .link-container a:hover {
-    color: #4f66e1;
   }
   
   @keyframes gradientBackground {

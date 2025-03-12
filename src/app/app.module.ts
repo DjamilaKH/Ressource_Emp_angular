@@ -42,6 +42,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardEmployeComponent } from './board-employe/board-employe.component';
 import { RegisterComponent } from './register/register.component';
+import { RessourceComponent } from './ressource/ressource.component';
+import { EmpruntComponent } from './emprunt/emprunt.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { RegisterComponent } from './register/register.component';
         ProfileComponent,
         BoardAdminComponent,
         BoardEmployeComponent,
-        RegisterComponent
+        RegisterComponent,
+        RessourceComponent,
+        EmpruntComponent
   ],
   imports: [
     BrowserModule,
